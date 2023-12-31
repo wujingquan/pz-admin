@@ -13,7 +13,7 @@ export const columns: TableColumnType = [
     resizable: true,
   },
   {
-    title: '名称',
+    title: '服务类型',
     align: 'center',
     dataIndex: 'name',
   },
