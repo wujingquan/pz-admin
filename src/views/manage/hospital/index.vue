@@ -45,7 +45,7 @@
           label: '服务管理',
           onClick: () => {
             console.log('查看详情');
-            router.push(`/manage/hospital/${record.id}`);
+            router.push(`/manage/server?hospital_id=${record.id}`);
           },
         },
         {
