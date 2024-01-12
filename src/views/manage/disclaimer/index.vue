@@ -39,11 +39,9 @@
     if (Array.isArray(ids)) {
       Modal.confirm({
         title: '确定要删除所选的用户吗?',
-        // icon: <ExclamationCircleOutlined />,
         centered: true,
         onOk: async () => {
           await deleteDisclaimers({ ids });
-          // fetchDeptList();
         },
       });
     } else {
@@ -51,7 +49,7 @@
     }
   };
 
-  const columns = [
+  const columns: any = [
     ...baseColumns,
     {
       title: '操作',

@@ -9,7 +9,7 @@ export const userSchemas: FormSchema<API.CreateDisclaimerParams>[] = [
   },
   {
     field: 'content',
-    component: 'Input',
+    component: 'InputTextArea',
     label: '内容',
     rules: [{ required: true, type: 'string' }],
   },
@@ -19,10 +19,23 @@ export const userSchemas: FormSchema<API.CreateDisclaimerParams>[] = [
     label: '唯一标志',
     rules: [{ required: true, type: 'string' }],
   },
+
   {
     field: 'status',
-    component: 'Input',
+    component: 'RadioGroup',
     label: '状态',
-    rules: [{ required: true, type: 'string' }],
+    defaultValue: 1,
+    componentProps: {
+      options: [
+        {
+          label: '启用',
+          value: 1,
+        },
+        {
+          label: '禁用',
+          value: 0,
+        },
+      ],
+    },
   },
 ];
