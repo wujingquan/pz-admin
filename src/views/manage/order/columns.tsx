@@ -75,87 +75,87 @@ export const columns: TableColumnType = [
   {
     title: '订单号',
     align: 'center',
-    dataIndex: 'image',
+    dataIndex: 'order_no',
   },
   {
     title: '城市',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'city.name',
   },
   {
     title: '医院',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'hospital.name',
   },
   {
     title: '服务类型',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'server.name',
   },
   {
     title: '就诊时间',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'visit_time',
   },
   {
     title: '就诊人姓名',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'name',
   },
   {
     title: '就诊人电话',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'mobile',
   },
   {
     title: '服务地址',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'address',
   },
   {
     title: '服务单价(元)',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'price',
   },
   {
     title: '夜间额外服务费(元)',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'night_other_money',
   },
   {
     title: '合计总金额(元)',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'sum_price',
   },
   {
     title: '优惠券减免金额(元)',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'coupon_price',
   },
   {
     title: '实际支出金额(元)',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'total_price',
   },
   {
     title: '状态',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'status',
   },
   {
     title: '下单时间',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'createdAt',
   },
   {
     title: '支付时间',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'payment_time',
   },
   {
     title: '接单人',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'member.name',
   },
   {
     title: '接单人联系电话',
@@ -165,6 +165,6 @@ export const columns: TableColumnType = [
   {
     title: '接单时间',
     align: 'center',
-    dataIndex: 'weight',
+    dataIndex: 'receiving_time',
   },
 ];
