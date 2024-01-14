@@ -80,17 +80,26 @@ export const columns: TableColumnType = [
   {
     title: '城市',
     align: 'center',
-    dataIndex: 'city.name',
+    dataIndex: 'city.city_name',
+    customRender: ({ record }: { record: any }) => {
+      return record.city.city_name;
+    },
   },
   {
     title: '医院',
     align: 'center',
-    dataIndex: 'hospital.name',
+    dataIndex: 'hospital.hospital_name',
+    customRender: ({ record }: { record: any }) => {
+      return record.hospital.hospital_name;
+    },
   },
   {
     title: '服务类型',
     align: 'center',
-    dataIndex: 'server.name',
+    dataIndex: 'server.server_name',
+    customRender: ({ record }: { record: any }) => {
+      return record.server.server_name;
+    },
   },
   {
     title: '就诊时间',
